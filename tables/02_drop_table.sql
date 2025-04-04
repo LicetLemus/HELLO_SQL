@@ -1,0 +1,22 @@
+-- The DROP TABLE statement is used to delete an existing table from the database.
+-- This operation is irreversible, meaning all data stored in the table will be permanently lost.
+-- Use this statement with caution, especially in production environments.
+-- 
+-- Syntax:
+DROP TABLE table_name;
+--
+-- Parameters:
+-- table_name: The name of the table to be deleted.
+--
+-- Example:
+-- Suppose you have a table named 'employees' that you no longer need. 
+-- You can drop it using the following statement:
+--
+DROP TABLE employees;
+--
+-- Note:
+-- - Ensure you have the necessary permissions to drop a table.
+-- - If the table does not exist, some database systems may throw an error unless the IF EXISTS clause is used.
+-- - To avoid errors, you can use the IF EXISTS clause as shown below:
+--
+-- DROP TABLE IF EXISTS employees;
